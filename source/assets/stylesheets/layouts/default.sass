@@ -1,0 +1,47 @@
+body
+  background: #fff
+  color: #666
+  font: Helvetica, Arial, sans-serif
+  padding-bottom: 30px
+  .inner
+    box-sizing: border-box
+    margin: 0 auto
+    padding: 0 20px
+    position: relative
+    width: 960px
+    h2
+      border-bottom: 1px solid #ddd
+      color: #333
+      margin: 0 0 20px
+      padding-bottom: 5px
+    h3
+      color: #474747
+      margin: 0
+      position: relative
+    time
+      color: #0F9DF4
+      font-size: 12px
+      font-weight: bold
+      position: absolute
+      right: 0
+      text-transform: uppercase
+      top: 0
+  section
+    padding-top: 15px
+    .position
+      position: relative
+      &+.position
+        border-top: 1px solid #ddd
+        margin-top: 20px
+        padding-top: 20px
+        time
+          top: 20px
+      h3
+        position: relative
+        &::before
+          color: #0F9DF4
+          content: "///"
+          font-size: 16px
+          left: -1.2em
+          position: absolute
+          top: 1px

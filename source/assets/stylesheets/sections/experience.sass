@@ -1,0 +1,21 @@
+#resume
+  section.experience
+    .technologies
+      font-size: 14px
+      font-style: italic
+    ul
+      font-size: 14px
+      padding: 0
+      &::before
+        display: block
+        font-style: italic
+        margin-bottom: 15px
+      &.responsibilities::before
+        content: "Responsibilities:"
+      &.accomplishments::before
+        content: "Accomplishments:"
+      li
+        line-height: 1.4em
+        margin-bottom: 5px
+        margin-left: 35px
+        max-width: 85%
