@@ -2636,7 +2636,7 @@ table {
   content: ""; }
 /* line 1, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
 body {
-  background: #fafafa;
+  background: #fff;
   color: #666;
   font: Helvetica, Arial, sans-serif;
   padding-bottom: 30px; }
@@ -2651,7 +2651,7 @@ body {
     body .inner h2 {
       border-bottom: 1px solid #ddd;
       color: #333;
-      margin: 0 0 5px;
+      margin: 0 0 20px;
       padding-bottom: 5px; }
     /* line 17, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
     body .inner h3 {
@@ -2660,28 +2660,31 @@ body {
       position: relative; }
     /* line 21, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
     body .inner time {
-      color: #aaa;
+      color: #0F9DF4;
       font-size: 12px;
       font-weight: bold;
       position: absolute;
       right: 0;
       text-transform: uppercase;
-      top: 20px; }
+      top: 0; }
   /* line 29, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
   body section {
     padding-top: 15px; }
     /* line 31, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
     body section .position {
-      padding-top: 20px;
       position: relative; }
-      /* line 34, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
+      /* line 33, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
       body section .position + .position {
         border-top: 1px solid #ddd;
-        margin-top: 20px; }
-      /* line 37, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
+        margin-top: 20px;
+        padding-top: 20px; }
+        /* line 37, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
+        body section .position + .position time {
+          top: 20px; }
+      /* line 39, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
       body section .position h3 {
         position: relative; }
-        /* line 39, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
+        /* line 41, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
         body section .position h3::before {
           color: #0F9DF4;
           content: "///";
@@ -2689,38 +2692,13 @@ body {
           left: -1.2em;
           position: absolute;
           top: 1px; }
-      /* line 46, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-      body section .position .technologies {
-        font-size: 14px;
-        font-style: italic; }
-      /* line 49, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-      body section .position ul {
-        font-size: 14px;
-        padding: 0; }
-        /* line 52, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-        body section .position ul::before {
-          display: block;
-          font-style: italic;
-          margin-bottom: 15px; }
-        /* line 56, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-        body section .position ul.responsibilities::before {
-          content: "Responsibilities:"; }
-        /* line 58, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-        body section .position ul.accomplishments::before {
-          content: "Accomplishments:"; }
-        /* line 60, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/layouts/default.sass */
-        body section .position ul li {
-          line-height: 1.4em;
-          margin-bottom: 5px;
-          margin-left: 35px;
-          max-width: 70%; }
 
 /* line 5, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
 #resume header {
   background: #0F9DF4;
   border-bottom: 5px solid #0E8DDB;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 20px 0;
   position: relative;
   z-index: 2; }
@@ -2792,9 +2770,31 @@ body {
 #resume section.education .position {
   margin-bottom: 10px;
   position: relative; }
-/* line 2, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
-#resume section.experience {
-  padding-top: 30px; }
+/* line 3, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+#resume section.experience .technologies {
+  font-size: 14px;
+  font-style: italic; }
+/* line 6, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+#resume section.experience ul {
+  font-size: 14px;
+  padding: 0; }
+  /* line 9, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+  #resume section.experience ul::before {
+    display: block;
+    font-style: italic;
+    margin-bottom: 15px; }
+  /* line 13, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+  #resume section.experience ul.responsibilities::before {
+    content: "Responsibilities:"; }
+  /* line 15, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+  #resume section.experience ul.accomplishments::before {
+    content: "Accomplishments:"; }
+  /* line 17, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
+  #resume section.experience ul li {
+    line-height: 1.4em;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    max-width: 85%; }
 /*
  *
  *
