@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* line 5, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+#resume header {
+  background: #0F9DF4;
+  border-bottom: 5px solid #0E8DDB;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2; }
+  /* line 13, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+  #resume header .inner {
+    padding-left: 195px; }
+  /* line 15, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+  #resume header img {
+    border: 10px solid #fff;
+    box-shadow: 0 0 4px #888;
+    left: 20px;
+    height: 130px;
+    position: absolute;
+    width: 130px; }
+  /* line 22, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+  #resume header h1 {
+    font: 57px/0.9em "Arial Black", Arial;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding-top: 5px;
+    text-shadow: 0 0 3px #999;
+    text-transform: uppercase; }
+  /* line 29, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+  #resume header p {
+    margin: 10px 0 5px;
+    font-style: italic; }
+  /* line 32, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+  #resume header .contact {
+    bottom: -60px;
+    color: #666;
+    margin-top: 10px;
+    position: absolute; }
+    /* line 37, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+    #resume header .contact a {
+      color: #666;
+      text-decoration: none; }
+      /* line 40, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+      #resume header .contact a:hover {
+        text-decoration: underline; }
+    /* line 42, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+    #resume header .contact a, #resume header .contact span {
+      display: inline-block;
+      margin-right: 25px;
+      vertical-align: baseline; }
+      /* line 46, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+      #resume header .contact a::before, #resume header .contact span::before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        color: #555;
+        padding-right: 7px;
+        text-align: right;
+        vertical-align: baseline; }
+      /* line 52, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+      #resume header .contact a.phone::before, #resume header .contact span.phone::before {
+        content: ""; }
+      /* line 54, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+      #resume header .contact a.email::before, #resume header .contact span.email::before {
+        content: "";
+        font-size: 14px; }
+      /* line 57, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/contact.sass */
+      #resume header .contact a.github::before, #resume header .contact span.github::before {
+        content: ""; }
