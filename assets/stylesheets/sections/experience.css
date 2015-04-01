@@ -1,10 +1,10 @@
 /* line 3, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
 #resume section.experience .technologies {
-  font-size: 14px;
+  font-size: 0.9em;
   font-style: italic; }
 /* line 6, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
 #resume section.experience ul {
-  font-size: 14px;
+  font-size: 0.9em;
   padding: 0; }
   /* line 9, /Users/jhoyt/src/jaredhoyt/resume/source/assets/stylesheets/sections/experience.sass */
   #resume section.experience ul::before {
