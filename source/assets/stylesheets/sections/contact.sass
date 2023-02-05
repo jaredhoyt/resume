@@ -1,6 +1,3 @@
-// @import 'font-awesome/mixins'
-// @import 'font-awesome/variables'
-
 #resume
   header
     background: #0F9DF4
@@ -44,15 +41,18 @@
         margin-right: 25px
         vertical-align: baseline
         &::before
-          // @include fa-icon
+          @extend %fa-icon
           color: #555
           padding-right: 7px
           text-align: right
           vertical-align: baseline
         &.phone::before
-          // content: $fa-var-phone
+          @extend .fa-solid
+          content: fa-content($fa-var-phone)
         &.email::before
-          // content: $fa-var-envelope-o
+          @extend .fa-regular
+          content: fa-content($fa-var-envelope)
           font-size: 14px
         &.github::before
-          // content: $fa-var-github
+          @extend .fa-brands
+          content: fa-content($fa-var-github)
