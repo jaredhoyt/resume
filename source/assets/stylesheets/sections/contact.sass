@@ -1,0 +1,58 @@
+// @import 'font-awesome/mixins'
+// @import 'font-awesome/variables'
+
+#resume
+  header
+    background: #0F9DF4
+    border-bottom: 5px solid #0E8DDB
+    color: #fff
+    margin-bottom: 50px
+    padding: 20px 0
+    position: relative
+    z-index: 2
+    .inner
+      padding-left: 195px
+    img
+      border: 10px solid #fff
+      box-shadow: 0 0 4px #888
+      left: 20px
+      height: 130px
+      position: absolute
+      width: 130px
+    h1
+      font: 57px/.9em "Arial Black", Arial
+      letter-spacing: -.05em
+      margin: 0
+      padding-top: 5px
+      text-shadow: 0 0 3px #999
+      text-transform: uppercase
+    p
+      margin: 10px 0 5px
+      font-style: italic
+    .contact
+      bottom: -60px
+      color: #666
+      margin-top: 10px
+      position: absolute
+      a
+        color: #666
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+      a, span
+        display: inline-block
+        margin-right: 25px
+        vertical-align: baseline
+        &::before
+          // @include fa-icon
+          color: #555
+          padding-right: 7px
+          text-align: right
+          vertical-align: baseline
+        &.phone::before
+          // content: $fa-var-phone
+        &.email::before
+          // content: $fa-var-envelope-o
+          font-size: 14px
+        &.github::before
+          // content: $fa-var-github
