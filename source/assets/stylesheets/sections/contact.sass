@@ -1,51 +1,52 @@
 #resume
   header
-    background: #0F9DF4
-    border-bottom: 5px solid #0E8DDB
-    color: #fff
-    margin-bottom: 50px
-    padding: 20px 0
+    background: #ffe04b
+    color: #0c101e
+    height: 192px
+    padding: 0
     position: relative
     z-index: 2
     .inner
-      padding-left: 195px
-    img
-      border: 10px solid #fff
-      box-shadow: 0 0 4px #888
-      left: 20px
-      height: 130px
-      position: absolute
-      width: 130px
+      padding: 30px 35px
+    small
+      color: #1d0c00
+      font-size: .9em
+      font-weight: 525
+      line-height: 3em
     h1
-      font: 57px/.9em "Arial Black", Arial
-      letter-spacing: -.05em
+      font: 57px/.9em tt commons, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif
+      font-weight: 800
+      letter-spacing: -.02em
       margin: 0
-      padding-top: 5px
-      text-shadow: 0 0 3px #999
+      padding: 0
       text-transform: uppercase
     p
       margin: 10px 0 5px
       font-style: italic
     .contact
-      bottom: -60px
-      color: #666
+      bottom: 30px
+      color: #1d0c00
+      list-style: none
       margin-top: 10px
       position: absolute
+      right: 40px
       a
-        color: #666
+        color: #1d0c00
         text-decoration: none
         &:hover
           text-decoration: underline
-      a, span
-        display: inline-block
-        margin-right: 25px
-        vertical-align: baseline
+      li
+        line-height: 1.2em
+        margin-bottom: 4px
+        position: relative
         &::before
           @extend %fa-icon
-          color: #555
-          padding-right: 7px
-          text-align: right
-          vertical-align: baseline
+          color: #1d0c00
+          left: -25px
+          position: absolute
+          top: 1px
+        &.phone, &.email, &.github
+          font-weight: bold
         &.phone::before
           @extend .fa-solid
           content: fa-content($fa-var-phone)
