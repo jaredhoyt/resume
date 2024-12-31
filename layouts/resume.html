@@ -9,7 +9,7 @@
     </title>
 
     {{ $style := resources.Get "stylesheets/application.sass" | css.Sass | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ relURL $style.Permalink }}">
   </head>
   <body>
     <article id="resume">
