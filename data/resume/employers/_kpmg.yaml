@@ -1,0 +1,13 @@
+Name: KPMG via Goldstar (COVID Pandemic)
+Role: Consultant
+StartDate: 2020-04-01
+EndDate: 2020-06-01
+Summary: "Worked on a consulting team while at Goldstar to re-architect a fintech platform for KPMG"
+Accomplishments:
+  - Designed and implemented a core interoperable framework for integrating multiple fintech APIs, including **Plaid** and **Finicity**
+Technologies:
+  - Ruby
+  - Rails
+  - CI/CD
+  - Docker
+  - SaaS

@@ -1,0 +1,24 @@
+<header>
+  <div class="inner">
+    <h1>{{ .Name }}</h1>
+    <small>{{ .Role }}</small>
+
+    <ul class="contact">
+      {{ with .Address }}
+        <li class="location">
+          {{ .City }}, {{ .State }}<br>
+          {{ .Country }}
+        </li>
+      {{ end }}
+
+      <li class="phone">{{ .Phone }}</li>
+
+      <li class="email">
+        <a href="mailto:{{ .Email }}">{{ .Email }}</a>
+      </li>
+      <li class="github">
+        <a href="//{{ .Github }}" target="_blank">{{ .Github }}</a>
+      </li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title }} &ndash; {{ .Title }}
+      {{ end }}
+    </title>
+
+    {{ $style := resources.Get "stylesheets/application.sass" | css.Sass | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+    <article id="resume">
+      {{ with .Site.Data.resume }}
+        {{ partial "resume/contact.html" . }}
+        {{ partial "resume/summary.html" . }}
+        {{ partial "resume/experience.html" . }}
+        {{ partial "resume/education.html" . }}
+      {{ end }}
+    </article>
+  </body>
+</html>

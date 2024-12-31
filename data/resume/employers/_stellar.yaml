@@ -1,0 +1,30 @@
+Name: Stellar Tickets
+Role: Staff Engineer
+StartDate: 2020-06-01
+EndDate:
+Summary: >
+  Part of a small cross-functional team responsible for the startup of Stellar at
+  Goldstar and eventual spin-off of Stellar from Goldstar. Senior most individual 
+  contributor of the back-end team working across **Ruby on Rails**, **Python**,
+  **Elixir**, and cloud-native **AWS** solutions.
+Accomplishments:
+  - "Architected and implemented the core feature of the platform: conditional access at CDN edge for both live and on-demand video in serverless **Python** which scaled beyond 37,000 concurrent live viewers"
+  - Led the introduction of **Elixir** at Stellar and implemented a socket-based messaging protocol used to re-write “twitch” style chat (replaced a $1500/mo manually-scaled IRC-based system with a dynamically scaling solution that decreased costs 10x)
+  - Architected and collaborated on an implementation of real-time time-series analytics using **Elasticsearch**, **Kinesis**, **Lambda**, and **GraphQL**
+  - Developed a global video ingest networking solution in **AWS**, going from concept to production in less than 10 business days, using **CloudFront** as a reverse proxy
+  - Collaborated with design and front-end engineers to implement multi-tenant faceted search across multiple data structures with **Elasticsearch** including real-time reindexing
+  - Designed and implemented an elegant solution to GDPR and CCPA-compliant PII data redactions (across databases, source events, structured data, integrations, and data backups) that prioritized transparent and easy to implement data governance
+Technologies:
+  - Ruby
+  - Elixir
+  - GraphQL
+  - AWS
+  - Docker
+  - Elasticsearch
+  - OpenTelemetry
+  - Event Sourcing
+  - CQRS
+  - Lambda
+  - Python
+  - Terraform
+  - SaaS

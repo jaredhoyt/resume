@@ -1,0 +1,17 @@
+<section class="education">
+  <div class="inner">
+    <h2>Education</h2>
+
+    {{ range sort .Education "StartYear" "desc" }}
+      <div class="position">
+        <h3>
+          {{ .Institution }}
+          <span>{{ .Degree }}</span>
+        </h3>
+        <time>
+          {{ partial "date" .StartDate }} - {{ partial "date" .EndDate }}
+        </time>
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,21 @@
+Name: Acumen Brands
+Role: Senior Developer
+StartDate: 2013-08-01
+EndDate: 2015-04-01
+Summary:
+Accomplishments:
+  - Developed and maintained a large monolithic **Rails** application that powered several large e-commerce brands, including Country Outfitter and Maple&amp;West
+  - Migrated all front-end assets onto a new pipeline for dependency management and compilation
+  - Extensively utilized A/B testing to measure and improve engagement and conversion
+  - Engaged stakeholders to gather complex business needs and architect appropriate technical solutions
+  - Engineered a documentation engine to formalize and promote a company-wide styleguide
+Technologies:
+  - Ruby
+  - Rails
+  - CI/CD
+  - Cucumber
+  - HAML
+  - SASS
+  - JavaScript
+  - jQuery
+  - Backbone

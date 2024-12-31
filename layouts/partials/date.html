@@ -1,0 +1,9 @@
+{{ with . }}
+  {{ if hasSuffix . "00-00" }}
+    {{ substr . 0 4 }}
+  {{ else }}
+    {{ . | time.Format "Jan 2006" }}
+  {{ end }}
+{{ else }}
+  Present
+{{ end }}

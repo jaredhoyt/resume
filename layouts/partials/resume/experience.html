@@ -1,0 +1,35 @@
+<section class="experience">
+  <div class="inner">
+    <h2>Work Experience</h2>
+
+    {{ range sort .employers "StartDate" "desc" }}
+      <div class="position">
+        <h3>
+          {{ .Name }}
+          <span>{{ .Role }}</span>
+        </h3>
+
+        <time>
+          {{ partial "date" .StartDate }} -
+          {{ partial "date" .EndDate }}
+        </time>
+
+        {{ with .Summary }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+
+        {{ with .Accomplishments }}
+          <ul>
+            {{ range . }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+
+        {{ with .Technologies }}
+          <p class="technologies">{{ delimit . ", " }}</p>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
