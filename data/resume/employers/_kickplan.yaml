@@ -1,0 +1,21 @@
+Name: Kickplan
+Role: Staff Engineer (Founding Engineer)
+StartDate: 2023-06-01
+EndDate:
+Summary: 
+Accomplishments:
+  - Led ground-up development of Kickplan's core application platform using **Elixir**, architecting the foundation of the company's technical infrastructure
+  - Engineered a distributed, high-performance entitlements engine modeled after OpenPolicyAgent, achieving **OpenFeature** compliance while maintaining exceptional performance
+  - Designed and implemented a scalable multi-tier data processing pipeline using **Elixir**, **SQLite**, **Broadway**, and **Timescale**, capable of processing hundreds of millions of monthly data points with minimal resource consumption
+  - Architected and developed the company's flagship **Ruby** SDK, establishing the technical foundation and patterns for all subsequent SDK implementations across multiple languages
+Technologies:
+  - Elixir
+  - Phoenix
+  - Broadway
+  - Ruby
+  - JSON-RPC
+  - Pub/Sub
+  - SQLite
+  - PostgreSQL
+  - TimescaleDB
+  - OpenFeature
